@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayanshaikhayan786767-dotcom.github.io/yk-tensile-structure-work/sitemap.xml
