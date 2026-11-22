@@ -11,8 +11,8 @@
 <meta name="keywords" content="Tensile Structure, Car Parking Shade, Tensile Fabric, Tensile Roofing, YK Tensile Structure">
 <meta name="author" content="YK Tensile Structure Work">
 <meta name="robots" content="index, follow">
+
 <style>
-* {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -231,6 +231,116 @@ footer {
     height: 240px;
   }
 }
+/* ===== PREMIUM CINEMATIC ANIMATIONS ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Smooth Hero Entrance */
+.hero h1,
+.hero p,
+.hero a {
+  animation: luxuryReveal 1.2s ease both;
+}
+
+.hero p {
+  animation-delay: 0.2s;
+}
+
+.hero a {
+  animation-delay: 0.4s;
+}
+
+@keyframes luxuryReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Premium Section Reveal */
+section {
+  animation: sectionAppear 1s ease both;
+}
+
+@keyframes sectionAppear {
+  from {
+    opacity: 0.75;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 3D Service Cards */
+.project-card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transform-style: preserve-3d;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.025);
+  box-shadow: 0 18px 40px rgba(201,154,59,0.25);
+}
+
+/* Premium Gallery Zoom */
+.project-card img {
+  transition: transform 0.8s cubic-bezier(.2,.8,.2,1);
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* Golden Shine Buttons */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(201,154,59,0.4);
+}
+
+/* WhatsApp Gentle Pulse */
+.contact .btn {
+  animation: whatsappPulse 2.5s infinite;
+}
+
+@keyframes whatsappPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(201,154,59,0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(201,154,59,0);
+  }
+}
+
+/* Mobile Performance */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+  }
+  
 </style>
 </head>
 
